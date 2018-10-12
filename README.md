@@ -20,7 +20,9 @@
       chmod +x chromedriver
       sudo mv -f chromedriver /usr/local/share/chromedriver
       sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-      sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+      sudo chmod u+x,o+x /usr/local/bin/chromedriver
+      
+      # sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 
     3.字符界面运行
       sudo apt-get -y install xvfb gtk2-engines-pixbuf
